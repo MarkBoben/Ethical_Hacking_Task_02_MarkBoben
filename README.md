@@ -48,7 +48,7 @@ Compiled with: liblua-5.4.8 openssl-3.6.2 libssh2-1.11.1 libz-1.3.1
 Available nsock engines: epoll poll select
 ```
 
-![Nmap Version Check](Screenshots/Version_check.png)
+![Nmap Version Check](Screenshots/Version%20check.png)
 
 ---
 
@@ -91,7 +91,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.12 seconds
 
 **Observation:** All 1000 TCP ports were in a closed/reset state. This is expected for a minimal, freshly configured Kali Linux VM where no servers or services (such as SSH, HTTP, or FTP) have been started.
 
-![Basic Scan](Screenshots/Basic_scan.png)
+![Basic Scan](Screenshots/Basic%20scan.png)
 
 ---
 
@@ -127,7 +127,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.69 seconds
 
 **Observation:** Since no ports were open, service version detection returned no results. This confirms that the Kali VM is not running any listening network services at this time. In a real-world engagement, discovered services would be listed here with their exact versions — which are then cross-referenced against known CVEs for vulnerability assessment.
 
-![Version Detection](Screenshots/Version_detection.png)
+![Version Detection](Screenshots/Version%20detection.png)
 
 ---
 
@@ -176,7 +176,7 @@ OS detection is a critical step during the enumeration phase of a penetration te
 
 In this case, the scan returned an inconclusive result because OS fingerprinting relies on analyzing responses from open or closed ports. With all 1000 ports closed (reset), Nmap did not have enough varied network responses to distinguish between Linux kernel fingerprints with confidence.
 
-![OS Detection](Screenshots/OS_detection.png)
+![OS Detection](Screenshots/OS%20detection.png)
 
 ---
 
@@ -307,10 +307,10 @@ Overall, this task built a strong foundation in the scanning phase of ethical ha
 
 | File | Description |
 |---|---|
-| `Screenshots/Version_check.png` | Nmap installation and version verification |
-| `Screenshots/Basic_scan.png` | Basic scan — `nmap localhost` |
-| `Screenshots/Version_detection.png` | Version detection — `nmap -sV localhost` |
-| `Screenshots/OS_detection.png` | OS detection — `sudo nmap -O localhost` |
+| `Screenshots/Version check.png` | Nmap installation and version verification |
+| `Screenshots/Basic scan.png` | Basic scan — `nmap localhost` |
+| `Screenshots/Version detection.png` | Version detection — `nmap -sV localhost` |
+| `Screenshots/OS detection.png` | OS detection — `sudo nmap -O localhost` |
 
 ---
 
